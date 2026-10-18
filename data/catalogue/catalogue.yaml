@@ -1,0 +1,83 @@
+# AMD Hardware Advisor — curated hardware catalogue.
+#
+# RULES (ARCHITECTURE.md §7):
+#   - Every record cites an official AMD source in source_url.
+#   - Numeric specs (memory, TDP, compute units, TFLOPS, cores) are LEFT NULL here.
+#     They are populated ONLY from successfully ingested official product pages, never
+#     invented. source_verified=false until a field is confirmed from its source.
+#   - This catalogue is KEPT SEPARATE from the RAG document index.
+#
+# Seed provenance: the GPU architecture and gfx ids below are confirmed in the ROCm
+# 10.1.0 release notes (verified live 2026-10-17), which lists each model with its arch.
+# Numeric specs are intentionally absent — they will be added in P1+ only from
+# ingested product pages (mi300x.html, mi300a.html, 9005-series.html).
+
+- family: "Instinct"
+  model: "MI355X"
+  architecture: "CDNA 4"
+  gfx_id: "gfx950"
+  source_url: "https://rocm.docs.amd.com/en/latest/about/release-notes.html"
+  source_verified: false
+
+- family: "Instinct"
+  model: "MI350X"
+  architecture: "CDNA 4"
+  gfx_id: "gfx950"
+  source_url: "https://rocm.docs.amd.com/en/latest/about/release-notes.html"
+  source_verified: false
+
+- family: "Instinct"
+  model: "MI350P"
+  architecture: "CDNA 4"
+  gfx_id: "gfx950"
+  source_url: "https://rocm.docs.amd.com/en/latest/about/release-notes.html"
+  source_verified: false
+
+- family: "Instinct"
+  model: "MI325X"
+  architecture: "CDNA 3"
+  gfx_id: "gfx942"
+  source_url: "https://rocm.docs.amd.com/en/latest/about/release-notes.html"
+  source_verified: false
+
+- family: "Instinct"
+  model: "MI300X"
+  architecture: "CDNA 3"
+  gfx_id: "gfx942"
+  source_url: "https://rocm.docs.amd.com/en/latest/about/release-notes.html"
+  source_verified: false
+
+- family: "Instinct"
+  model: "MI300A"
+  architecture: "CDNA 3"
+  gfx_id: "gfx942"
+  source_url: "https://rocm.docs.amd.com/en/latest/about/release-notes.html"
+  source_verified: false
+
+- family: "Instinct"
+  model: "MI250X"
+  architecture: "CDNA 2"
+  gfx_id: "gfx90a"
+  source_url: "https://rocm.docs.amd.com/en/latest/about/release-notes.html"
+  source_verified: false
+
+- family: "Instinct"
+  model: "MI250"
+  architecture: "CDNA 2"
+  gfx_id: "gfx90a"
+  source_url: "https://rocm.docs.amd.com/en/latest/about/release-notes.html"
+  source_verified: false
+
+- family: "Instinct"
+  model: "MI210"
+  architecture: "CDNA 2"
+  gfx_id: "gfx90a"
+  source_url: "https://rocm.docs.amd.com/en/latest/about/release-notes.html"
+  source_verified: false
+
+- family: "Instinct"
+  model: "MI100"
+  architecture: "CDNA 1"
+  gfx_id: "gfx908"
+  source_url: "https://rocm.docs.amd.com/en/latest/about/release-notes.html"
+  source_verified: false

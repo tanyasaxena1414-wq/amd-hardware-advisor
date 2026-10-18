@@ -1,0 +1,48 @@
+# ---- Secrets (never commit) ----
+.env
+.env.local
+*.env
+
+# ---- RAG / runtime artifacts ----
+index/
+data/docs/_cache/
+
+# ---- Python ----
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+.eggs/
+build/
+dist/
+.pytest_cache/
+.ruff_cache/
+
+# ---- Virtual environments ----
+.venv/
+venv/
+env/
+
+# ---- Logs ----
+*.log
+logs/
+
+# ---- OS / editor ----
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# ---- Frontend dependencies ----
+node_modules/
+
+# ---- Additional secrets and local config ----
+.env.*
+!.env.example
+*.pem
+*.key
+
+# ---- Local databases ----
+*.sqlite
+*.sqlite3
+*.db
